@@ -24,6 +24,41 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 
+<?php
+
+// Считываем строку в браузере и получаем данные
+$url = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 
+$reffer = "https://".$_SERVER['HTTP_REFERER'];
+
+
+if ($url === unparse_url(parse_url($url))) { }
+
+// Функция распарсила данные на массивы
+function unparse_url($parsed_url) { 
+$host = isset($parsed_url['host']) ? $parsed_url['host'] : '';
+$path = isset($parsed_url['path']) ? $parsed_url['path'] : '';
+$query = isset($parsed_url['query']) ? '?' . $parsed_url['query'] : '';
+$fragment = isset($parsed_url['fragment']) ? '#' . $parsed_url['fragment'] : '';
+
+$str = $parsed_url['query'];
+parse_str($str, $output);
+
+// Переназначение массивов в переменные
+$utm_source   = $output[utm_source];
+$utm_medium   = $output[utm_medium];
+$utm_campaign = $output[utm_campaign];
+$utm_content  = $output[utm_content];
+$utm_term   = $output[utm_term];
+$utm_match   = $output[utm_match];
+// $external_id   = $output[external_id];
+$gclid   = $output[gclid];
+$accid   = $output[accid];
+
+?>
+
+<?php
+  echo '
+
 <body>
     <header class="header">
         <div class="header__container">
@@ -361,6 +396,10 @@
             </div>
         </section>
     </main>
+
+        ';
+} 
+?>
 
     <footer class="footer">
         <div class="footer__container">
