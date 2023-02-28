@@ -1012,26 +1012,35 @@ body {
   margin-bottom: 5px;
   text-transform: uppercase;
   color: brown;
+  cursor: pointer;
+}
+
+.window__close:hover {
+  cursor: pointer;
 }
 .window__close6 {
   margin-bottom: 5px;
   text-transform: uppercase;
   color: brown;
+  cursor: pointer;
 }
 .window__close7 {
   margin-bottom: 5px;
   text-transform: uppercase;
   color: brown;
+  cursor: pointer;
 }
 .window__close8 {
   margin-bottom: 5px;
   text-transform: uppercase;
   color: brown;
+  cursor: pointer;
 }
 .window__close9 {
   margin-bottom: 5px;
   text-transform: uppercase;
   color: brown;
+  cursor: pointer;
 }
 .window__backcloth2 {
   position: fixed;
@@ -1158,6 +1167,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  cursor: pointer;
 }
 .window__backcloth4 {
   position: fixed;
@@ -1218,6 +1228,7 @@ body {
   display: block;
   color: brown;
   margin-top: 20px;
+  cursor: pointer;
 }
 .window__p {
   display: block;
@@ -1294,6 +1305,7 @@ body {
   display: block;
   color: brown;
   margin-top: 20px;
+  cursor: pointer;
 }
 .window__heading5 {
   margin-top: 0;
@@ -1708,7 +1720,7 @@ body {
   background-repeat: repeat;
   background-size: cover;
   background-size: 100% 100%;
-  background-image: url(../images/Background-mob.png);
+  background-image: url(../images/Back-mb.png);
   background-position: center center;
   display: flex;
   align-items: center;
@@ -1720,7 +1732,7 @@ body {
     background-repeat: repeat;
     background-size: cover;
     background-size: 100% 100%;
-    background-image: url(../images/Background2.png);
+    background-image: url(../images/Back2.png);
     background-position: center center;
   }
 }
@@ -1730,7 +1742,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 100%;
-    background-image: url(../images/Background2.png);
+    background-image: url(../images/Back2.png);
   }
 }
 @media screen and (min-width: 1600px) {
@@ -1739,7 +1751,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 100%;
-    background-image: url(../images/Background2.png);
+    background-image: url(../images/Back2.png);
     background-position: center center;
   }
 }
