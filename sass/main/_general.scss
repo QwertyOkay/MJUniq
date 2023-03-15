@@ -2251,9 +2251,20 @@ body {
   width: 170px;
 }
 
+.wCh2 {
+  width: 135px;
+  padding: 5px;
+}
+
 .widthCherry {
   @media screen and (min-width: 1200px) {
     width: 196px;
+  }
+}
+
+.widthCherry2 {
+  @media screen and (min-width: 1200px) {
+    width: 175px;
   }
 }
 
@@ -2267,6 +2278,20 @@ body {
   }
 }
 
+.Leo2 {
+  padding: 5px;
+
+  @media screen and (min-width: 1200px) {
+    width: 155px;
+    padding: 0px;
+  }
+}
+
 .blackLink {
   color: black;
+}
+
+.marginPC {
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
