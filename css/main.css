@@ -2372,6 +2372,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .width2 {
+    width: 200px;
+  }
+}
+
 .wCh {
   width: 170px;
 }
